@@ -1,21 +1,18 @@
 - Eda 
-> Personal
-Eliminar columnas: ID, Dt_Customer, Complain
-Modificar columnas: Teenhome, Kighnome (modificacion a valores binarios para evitar el desbalanceo)
-
-> Product
-Transformacion logaritmica para normalizar (mirar opciones)
-
-> Promotion
-Juntar las variables accepted en una sola
-Conservar NumDealPurchase
-Pensar en su conservar variable Response
-
-> Place 
-Transformacion o escalado de todas estas variables 
-
->> criterios extra: Estas variables se tuvieron en cuenta por la correlacion que existe entre ellas, la cual puede reforzar la variabilidad y ayudar a una mejor clusterizacion
+Analisis de distribuciones, histogramas, outliers y correlaciones
 
 - Procesamiento de datos
+1. Eliminar columnas: ID, Dt_Customer, Complain, Z_CostContact, Z_Revenue 
+2. Elimar los pocos outliers de INCOME
+3. Modificar los valores mas desbalanceados d Marital_Status y llevarlos a una categoria parecida
+4. Modificar columnas: Teenhome, Kidhnome (modificacion a valores binarios para evitar el desbalanceo)
+5. Juntar las variables Accepted en una sola
+6. Borrar las variables Accepted referias de 1 a 5 ofertas ya que ahora estan combinadas en una sola
+
 - Clusterizacion 
+1. Aplicar PCA a la data preprocesada
+2. Aplicar Kmeans, Hierarchical Clustering y DBSCAN 
+3. Añadir las identificaciones de los clusters a la data preprocesada para luego comparar
+
 - Extraccion de conclusiones
+1. Verificar que modelo de clusterizacion tuvo mejor resultados
