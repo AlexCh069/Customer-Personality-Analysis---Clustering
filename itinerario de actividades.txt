@@ -1,0 +1,21 @@
+- Eda 
+> Personal
+Eliminar columnas: ID, Dt_Customer, Complain
+Modificar columnas: Teenhome, Kighnome (modificacion a valores binarios para evitar el desbalanceo)
+
+> Product
+Transformacion logaritmica para normalizar (mirar opciones)
+
+> Promotion
+Juntar las variables accepted en una sola
+Conservar NumDealPurchase
+Pensar en su conservar variable Response
+
+> Place 
+Transformacion o escalado de todas estas variables 
+
+>> criterios extra: Estas variables se tuvieron en cuenta por la correlacion que existe entre ellas, la cual puede reforzar la variabilidad y ayudar a una mejor clusterizacion
+
+- Procesamiento de datos
+- Clusterizacion 
+- Extraccion de conclusiones
